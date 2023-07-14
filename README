@@ -1,0 +1,32 @@
+###The end product of the graph-based email system would be a user-friendly web application with the following features:
+
+1. User Registration and Authentication:
+   - Users can create accounts and obtain unique public-private key pairs for encryption.
+   - Secure authentication mechanisms to verify user identities, such as username/password or two-factor authentication.
+
+2. Composing and Sending Emails:
+   - Users can compose emails and enter the recipient's address.
+   - The message content and attachments will be securely encrypted using the recipient's public key before sending.
+   - Each sent message will create a transaction on the blockchain, emitting an event with the recipient's address and the encrypted message.
+
+3. Blockchain Integration:
+   - The email system will be integrated with a chosen blockchain platform (e.g., Ethereum).
+   - Smart contracts will handle email-related functionalities, such as encryption, storage, and retrieval.
+   - Events on the blockchain will be indexed using TheGraph protocol for efficient querying.
+
+4. Message Retrieval and Decryption:
+   - The recipient can view all the messages sent to them.
+   - The web application will use GraphQL to query the subgraph and retrieve the messages associated with the recipient's address.
+   - When the recipient opens a message, the message will be decrypted using their private key and displayed to them.
+
+5. User Interface and User Experience:
+   - The web application will have a visually appealing and intuitive user interface.
+   - Users can navigate through their mailbox, search for specific messages, and manage contacts.
+   - The application will provide a seamless user experience with smooth transitions and responsive design.
+
+6. Security and Privacy:
+   - Messages will be securely encrypted using asymmetric encryption algorithms (e.g., RSA) with the recipient's public key.
+   - The use of blockchain ensures decentralized storage and verification of messages, enhancing security and privacy.
+   - Additional security measures like digital signatures and encryption key management can be implemented to further enhance the system's security.
+
+Overall, the end product will be a robust and secure web application that leverages blockchain technology to provide a graph-based email system with encryption, message storage on the blockchain, and efficient retrieval and decryption of messages.
